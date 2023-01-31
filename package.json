@@ -2,7 +2,7 @@
   "name": "aleo-record-interfaces",
   "version": "1.0.0",
   "description": "A set of interfaces for parsing a rest response from Aleo SDK (slingshot fork)'s unspent records endpoint.",
-  "main": "index.ts",
+  "main": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
