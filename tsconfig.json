@@ -1,0 +1,15 @@
+{
+    "files": [
+        "./index.ts",
+        "./types/common/main.d.ts",
+        "./types/common/interfaces.d.ts",
+        "./types/common/functions.d.ts",
+    ],
+    "compilerOptions": {
+        "lib": ["es2020"],
+        "typeRoots": [
+            "./types/common",
+        ]
+    },
+    
+}
