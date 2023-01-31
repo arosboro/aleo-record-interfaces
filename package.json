@@ -1,0 +1,26 @@
+{
+  "name": "aleo-record-interfaces",
+  "version": "1.0.0",
+  "description": "A set of interfaces for parsing a rest response from Aleo SDK (slingshot fork)'s unspent records endpoint.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arosboro/aleo-record-interfaces.git"
+  },
+  "keywords": [
+    "Aleo",
+    "TypeScript",
+    "Record",
+    "Interface",
+    "Transmutation"
+  ],
+  "author": "Andrew Rosborough <arosborough@oculat.us>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/arosboro/aleo-record-interfaces/issues"
+  },
+  "homepage": "https://github.com/arosboro/aleo-record-interfaces#readme"
+}
