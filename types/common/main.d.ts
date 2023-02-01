@@ -1,16 +1,15 @@
 // types/common/main.d.ts
 
-/// <reference path=".//interfaces.d.ts" />
+/// <reference path="./interfaces.d.ts" />
 /// <reference path="./functions.d.ts" />
 
-import { AleoRecord } from "./interfaces";
+import { AleoRecord, RecordElement } from "./interfaces";
 
-export type AleoRecordList = {
-    [key: string]: AleoRecord;
-};
+declare module "aleo-record-interfaces" {
 
-export type AleoRecordIndex = string[];
+    export type AleoRecordList = {
+        [key: string]: AleoRecord;
+    };
 
-export type RestResponse = {
-[   key: string]: string;
-};
+    export type AleoRecordIndex = string[];
+}

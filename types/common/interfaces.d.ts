@@ -1,5 +1,16 @@
 // types/common/interfaces.d.ts
 
+export type RestResponse = {
+    [key: string]: string;
+};
+
+export interface AleoRecord {
+    owner: RecordElement;
+    gates: RecordElement;
+    _nonce: RecordElement;
+    [key: string]: RecordElement;
+}
+
 export interface RecordElement {
     raw: string;
     type:
@@ -53,7 +64,7 @@ export interface RecordElement {
   export interface I64Element extends RecordElement {
     raw: string;
     type: "i64";
-    value: number;
+    value: BigInt;
     scope: "private" | "public";
   }
   
@@ -88,7 +99,7 @@ export interface RecordElement {
   export interface U64Element extends RecordElement {
     raw: string;
     type: "u64";
-    value: number;
+    value: BigInt;
     scope: "private" | "public";
   }
   
@@ -125,11 +136,4 @@ export interface RecordElement {
     type: "address";
     value: string;
     scope: "private" | "public";
-  }
-  
-  export interface AleoRecord {
-    owner: RecordElement;
-    gates: RecordElement;
-    _nonce: RecordElement;
-    [key: string]: RecordElement;
   }

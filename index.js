@@ -61,7 +61,7 @@ function parse(res) {
                     record[key] = {
                         raw: raw,
                         type: type,
-                        value: parseInt(data[key]),
+                        value: BigInt(data[key]),
                         scope: scope
                     };
                     break;
@@ -101,7 +101,7 @@ function parse(res) {
                     record[key] = {
                         raw: raw,
                         type: type,
-                        value: parseInt(data[key]),
+                        value: BigInt(data[key]),
                         scope: scope
                     };
                     break;
