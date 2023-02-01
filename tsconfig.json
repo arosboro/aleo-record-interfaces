@@ -1,16 +1,15 @@
 {
     "files": [
-        "./index.ts",
-        "./types/common/main.d.ts",
-        "./types/common/interfaces.d.ts",
-        "./types/common/functions.d.ts",
+        "src/index.ts",
     ],
     "compilerOptions": {
-        "lib": ["es2020"],
+        "lib": ["es2021"],
         "esModuleInterop": true,
-        "typeRoots": [
-            "./types/common",
-        ]
+        "strictNullChecks": true,
+        "declaration": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
     },
     
 }

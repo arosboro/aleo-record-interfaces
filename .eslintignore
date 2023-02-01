@@ -1,0 +1,4 @@
+tests/*.tests.ts
+src/index.d.ts
+jest.config.ts
+*.js

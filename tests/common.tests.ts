@@ -1,6 +1,6 @@
 import {expect, test} from '@jest/globals';
-import { RestResponse, AleoRecord } from "../index";
-import { parse } from "../index";
+import type { RestResponse, AleoRecord } from "../src/index";
+import { parse } from "../src/index";
 
 // const res: string
 test("parse", () => {
