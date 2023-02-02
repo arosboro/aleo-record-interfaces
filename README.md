@@ -75,9 +75,9 @@ try {
     const response = await axios.post("/api/testnet3/records/unspent", {
         view_key: "AViewKey1huxxFRxUvS9Xx2Cy49JK8nn7ZNQ9mrfeMiq6UYZbbdZ5",
     });
-    // The keys are hashes, (field values) in string format
-    // Each record is JSON format of a serialized program_id.aleo/Record.record
-    // It is important to pull records from the response before parsing
+    // The keys are hashes, (field values) in string format.
+    // Each record starts out serialized as a JSON string.
+    // It is important to pull records from the response before parsing.
     aleoRecordStore.consume(response.data.records); 
 } catch (error) {
     console.log(error);
