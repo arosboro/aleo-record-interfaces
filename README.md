@@ -68,14 +68,18 @@ export const useAleoRecordStore = defineStore("AleoRecords", () => {
 import { axios } from 'axios';
 import { useAleoRecordStore } from '@/store/records.ts';
 
+const aleoRecordStore = useAleoRecordStore();
+
 try {
     // /api/ is set up as a vuejs proxy to the development node.
     const response = await axios.post("/api/testnet3/records/unspent", {
         view_key: "AViewKey1huxxFRxUvS9Xx2Cy49JK8nn7ZNQ9mrfeMiq6UYZbbdZ5",
     });
     // The keys are hashes, (field values) in string format
-    // Each record is JSON format of a serialized program_id.aleo/ProgramRecord.record
-    aleoRecordStore.consume(response.data.records); // Important to pull records from the response before parsing.
+    // Each record is JSON format of 
+    // a serialized program_id.aleo/ProgramRecord.record.
+    // It is important to pull records from the response before parsing.
+    aleoRecordStore.consume(response.data.records); 
 } catch (error) {
     console.log(error);
 }
