@@ -4,7 +4,7 @@
 `npm run test` to run the tests.
 Example output:
 
-    > aleo-record-interfaces@1.0.4 test
+    > aleo-record-interfaces@1.0.6 test
     > tsc && jest tests/common.tests.ts
 
     PASS  tests/common.tests.ts

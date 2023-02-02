@@ -1,6 +1,6 @@
 {
   "name": "aleo-record-interfaces",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A set of interfaces for parsing a rest response from Aleo SDK (slingshot fork)'s unspent records endpoint.",
   "main": "src/index.js",
   "types": "./src/index.d.ts",
