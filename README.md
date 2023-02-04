@@ -4,17 +4,36 @@
 `npm run test` to run the tests.
 Example output:
 
-    > aleo-record-interfaces@1.0.6 test
-    > tsc && jest tests/common.tests.ts
+    % npm run test
 
-    PASS  tests/common.tests.ts
-    ✓ parse (14 ms)
+> aleo-record-interfaces@1.0.6 test
+> tsc && jest tests/common.tests.ts
 
-    Test Suites: 1 passed, 1 total
-    Tests:       1 passed, 1 total
-    Snapshots:   0 total
-    Time:        0.819 s, estimated 1 s
-    Ran all test suites matching /tests\/common.tests.ts/i.
+ PASS  tests/common.tests.ts
+  parse
+    ✓ AddressElement (2 ms)
+    ✓ U64Element
+    ✓ U8Element (1 ms)
+    ✓ U16Element (1 ms)
+    ✓ U32Element (1 ms)
+    ✓ U64Element (1 ms)
+    ✓ U128Element
+    ✓ I8Element
+    ✓ I16Element
+    ✓ I32Element
+    ✓ I64Element (1 ms)
+    ✓ I128Element (1 ms)
+    ✓ PrivateAddressElement (1 ms)
+    ✓ PublicAddressElement (2 ms)
+    ✓ FieldElement (5 ms)
+    ✓ ScalarElement (1 ms)
+    ✓ GroupElement (3 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       17 passed, 17 total
+Snapshots:   0 total
+Time:        0.868 s, estimated 1 s
+Ran all test suites matching /tests\/common.tests.ts/i.
 
 ### Example Usage Provided as a Pinia Store for a Vue 3 Application.
 
